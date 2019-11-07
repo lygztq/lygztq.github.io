@@ -48,7 +48,7 @@
     
     <title>
         
-            标签: 技术考古 | 
+            数据流的中位数 | 
         
         TianQi&#39;s Site
     </title>
@@ -59,7 +59,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="Some notes about OJ and CS">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Algorithm,Leetcode,DataStructure">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -86,6 +86,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -222,7 +225,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="TianQi&#39;s Site">
-    <meta name="msapplication-starturl" content="https://riteme.github.io/tags/技术考古/">
+    <meta name="msapplication-starturl" content="https://riteme.github.io/2019/11/07/数据流的中位数/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="TianQi&#39;s Site">
@@ -237,13 +240,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://riteme.github.io/tags/技术考古/">
+    <meta property="og:url" content="https://riteme.github.io/2019/11/07/数据流的中位数/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: 技术考古 | TianQi&#39;s Site">
+    <meta property="og:title" content="数据流的中位数 | TianQi&#39;s Site">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="Some notes about OJ and CS">
-    
+    <meta property="og:article:tag" content="Algorithm"> <meta property="og:article:tag" content="Leetcode"> <meta property="og:article:tag" content="DataStructure"> 
 
+    
+        <meta property="article:published_time" content="Thu Nov 07 2019 20:01:27 GMT+0800">
+        <meta property="article:modified_time" content="Thu Nov 07 2019 21:29:07 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,13 +257,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://riteme.github.io/tags/技术考古/index.html" />
+        <link rel="canonical" href="https://riteme.github.io/2019/11/07/数据流的中位数/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://riteme.github.io/2019/11/07/数据流的中位数/index.html",
+    "headline": "数据流的中位数",
+    "datePublished": "Thu Nov 07 2019 20:01:27 GMT+0800",
+    "dateModified": "Thu Nov 07 2019 21:29:07 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "TianQi Zhang",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "Welcome, wish you find something useful here."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "TianQi&#39;s Site",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",Algorithm,Leetcode,DataStructure",
+    "description": "Some notes about OJ and CS",
+}
+</script>
 
 
     
@@ -291,159 +327,475 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Problem"><span class="post-toc-number">1.</span> <span class="post-toc-text">Problem</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Solution-1-维护有序序列"><span class="post-toc-number">2.</span> <span class="post-toc-text">Solution-1 维护有序序列</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Solution-2-维护两个平衡的堆"><span class="post-toc-number">3.</span> <span class="post-toc-text">Solution-2 维护两个平衡的堆</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/02/first-try/">First_try</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/02/first-try/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="TianQi Zhang's avatar">
-            </div>
-            <div>
-                <strong>TianQi Zhang</strong>
-                <span>8月 02, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Caffe考古/">Caffe考古</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/07/20/caffe-initial-commit/">Caffe_initial_commit</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            前言又是一个新开的...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/07/20/caffe-initial-commit/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="TianQi Zhang's avatar">
-            </div>
-            <div>
-                <strong>TianQi Zhang</strong>
-                <span>7月 20, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Caffe考古/">Caffe考古</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                数据流的中位数
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>TianQi Zhang</strong>
+        <span>11月 07, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Algorithm/">Algorithm</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/DataStructure/">DataStructure</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Leetcode/">Leetcode</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。</p>
+<p>例如，</p>
+<p>[2,3,4] 的中位数是 3</p>
+<p>[2,3] 的中位数是 (2 + 3) / 2 = 2.5</p>
+<p>设计一个支持以下两种操作的数据结构：</p>
+<pre><code class="lang-c++">void addNum(int num) // 从数据流中添加一个整数到数据结构中。
+double findMedian() // 返回目前所有元素的中位数。
+</code></pre>
+<h2 id="Solution-1-维护有序序列"><a href="#Solution-1-维护有序序列" class="headerlink" title="Solution-1 维护有序序列"></a>Solution-1 维护有序序列</h2><p>可以直接维护一个单调的序列，链表或者数组都可以，两者实现方法不同但是时间复杂度一样，这里给出链表的实现</p>
+<pre><code class="lang-c++">struct IncListNode {
+    int val;
+    IncListNode* next;
+    IncListNode* prev;
+
+    IncListNode(): val(0), next(nullptr), prev(nullptr) {}
+    IncListNode(int value, IncListNode* nextNode=nullptr, IncListNode* prevNode=nullptr)
+        : val(value), next(nextNode), prev(prevNode) {}
+};
+
+class IncreasingList {
+private:
+    IncListNode* head;
+    IncListNode* tail;
+    int numElem;
+    IncListNode* medianPtr;
+
+    bool even() {
+        return (numElem % 2) == 0;
+    }
+public:
+    IncreasingList(): numElem(0) {
+        head = new IncListNode();
+        tail = new IncListNode();
+        head-&gt;next = tail;
+        tail-&gt;prev = head;
+        medianPtr = head;
+    }
+
+    ~IncreasingList() {
+        IncListNode* ptr = head;
+        while (ptr) {
+            IncListNode* tempPtr = ptr;
+            ptr = ptr-&gt;next;
+            delete tempPtr;
+        }
+    }
+
+    /*  1. even, not cross: do nothing
+        2. even, cross: ptr = ptr-&gt;next
+        3. odd, not cross: ptr = ptr-&gt;prev
+        4. odd, cross: do nothing
+    */
+    void insert(int n) {
+        IncListNode* newNode = new IncListNode(n);
+        IncListNode* ptr = head-&gt;next;
+        bool cross = false;
+
+        while(ptr != tail) {
+            if (n &gt; ptr-&gt;val) {
+                if (ptr == medianPtr) cross = true;
+                ptr = ptr-&gt;next;
+            }
+            else if (n &lt;= ptr-&gt;val) {
+                ptr-&gt;prev-&gt;next = newNode;
+                newNode-&gt;prev = ptr-&gt;prev;
+                ptr-&gt;prev = newNode;
+                newNode-&gt;next = ptr;
+                break;
+            }
+        }
+
+        if (ptr == tail) {
+            cross = true;
+            ptr = tail-&gt;prev;
+            tail-&gt;prev = newNode;
+            newNode-&gt;next = tail;
+            ptr-&gt;next = newNode;
+            newNode-&gt;prev = ptr;
+        }
+
+        if (even() &amp;&amp; cross) {
+            medianPtr = medianPtr-&gt;next;
+        }
+        else if (!even() &amp;&amp; !cross) {
+            medianPtr = medianPtr-&gt;prev;
+        }
+        numElem++;
+    }
+
+    double median() {
+        if (even()) 
+            return static_cast&lt;double&gt;(medianPtr-&gt;val + medianPtr-&gt;next-&gt;val) / 2;
+        else
+            return static_cast&lt;double&gt;(medianPtr-&gt;val);
+    }
+
+    void print() {
+        IncListNode* ptr = head-&gt;next;
+        cout &lt;&lt; &quot;head -&gt; &quot;;
+        while(ptr != tail) {
+            cout &lt;&lt; ptr-&gt;val &lt;&lt; &quot; -&gt; &quot;;
+            ptr = ptr-&gt;next;
+        }
+        cout &lt;&lt; &quot;tail;  medPtr: &quot; &lt;&lt; medianPtr-&gt;val &lt;&lt; endl;
+    }
+};
+
+class MedianFinder {
+private:
+    IncreasingList* list;
+public:
+    /** initialize your data structure here. */
+    MedianFinder() {
+        list = new IncreasingList();
+    }
+
+    ~MedianFinder() {
+        delete list;
+    }
+
+    void addNum(int num) {
+        list-&gt;insert(num);
+        //list-&gt;print();
+    }
+
+    double findMedian() {
+        return list-&gt;median();
+    }
+};
+
+/**
+ * Your MedianFinder object will be instantiated and called as such:
+ * MedianFinder* obj = new MedianFinder();
+ * obj-&gt;addNum(num);
+ * double param_2 = obj-&gt;findMedian();
+ */
+</code></pre>
+<h2 id="Solution-2-维护两个平衡的堆"><a href="#Solution-2-维护两个平衡的堆" class="headerlink" title="Solution-2 维护两个平衡的堆"></a>Solution-2 维护两个平衡的堆</h2><p>可以维护两个size平衡的堆，一个大顶堆记录有序序列的前半段，另一个小顶堆记录有序序列的后半段。如果元素个数为<code>2k+1</code>个的话，则大顶堆记录前<code>k+1</code>个，小顶堆记录后<code>k</code>个。如果是<code>2k</code>的话就均分。这样计算中位数的时候就可以以常数复杂度返回，并且添加元素的复杂度是对数级别</p>
+<pre><code class="lang-c++">// code-1
+class MedianFinder {
+    priority_queue&lt;int&gt; lo;                              // max heap
+    priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; hi;   // min heap
+
+public:
+    // Adds a number into the data structure.
+    void addNum(int num)
+    {
+        lo.push(num);                                    // Add to max heap
+
+        hi.push(lo.top());                               // balancing step
+        lo.pop();
+
+        if (lo.size() &lt; hi.size()) {                     // maintain size property
+            lo.push(hi.top());
+            hi.pop();
+        }
+    }
+
+    // Returns the median of current data stream
+    double findMedian()
+    {
+        return lo.size() &gt; hi.size() 
+            ? (double) lo.top() : (lo.top() + hi.top()) * 0.5;
+    }
+};
+
+// code-2
+class MedianFinder {
+private:
+    priority_queue&lt;int&gt; low;
+    priority_queue&lt;int, vector&lt;int&gt;, std::greater&lt;int&gt;&gt; high;
+public:    
+    void addNum(int num) {
+        low.push(num);
+
+        if (low.size() &gt; high.size() + 1) {
+            high.push(low.top()); 
+            low.pop();
+        }
+
+        if (!low.empty() &amp;&amp; !high.empty()) {
+            while (low.top() &gt; high.top()) {
+                int temp = low.top();
+                low.pop();
+                low.push(high.top());
+                high.pop();
+                high.push(temp);
+            }
+        }
+    }
+
+    double findMedian() {
+        if (low.size() &gt; high.size()) return static_cast&lt;double&gt;(low.top());
+        else return static_cast&lt;double&gt;(low.top() + high.top()) / 2;
+    }
+};
+</code></pre>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #757575;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://riteme.github.io/2019/11/07/数据流的中位数/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://riteme.github.io/2019/11/07/数据流的中位数/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//lygztq.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//lygztq.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/11/07/nim-game/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -614,6 +966,14 @@ It will not impact the appearance and can give developers a lot of support :)
                     
 
                     
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
@@ -765,6 +1125,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -777,6 +1141,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
