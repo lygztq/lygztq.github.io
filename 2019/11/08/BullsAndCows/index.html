@@ -48,7 +48,7 @@
     
     <title>
         
-            标签: Algorithm | 
+            BullsAndCows | 
         
         TianQi&#39;s Site
     </title>
@@ -59,7 +59,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="Some notes about OJ and CS">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Algorithm,Leetcode">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -86,6 +86,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -222,7 +225,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="TianQi&#39;s Site">
-    <meta name="msapplication-starturl" content="https://riteme.github.io/tags/Algorithm/">
+    <meta name="msapplication-starturl" content="https://riteme.github.io/2019/11/08/BullsAndCows/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="TianQi&#39;s Site">
@@ -237,13 +240,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://riteme.github.io/tags/Algorithm/">
+    <meta property="og:url" content="https://riteme.github.io/2019/11/08/BullsAndCows/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: Algorithm | TianQi&#39;s Site">
+    <meta property="og:title" content="BullsAndCows | TianQi&#39;s Site">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="Some notes about OJ and CS">
-    
+    <meta property="og:article:tag" content="Algorithm"> <meta property="og:article:tag" content="Leetcode"> 
 
+    
+        <meta property="article:published_time" content="Fri Nov 08 2019 09:59:05 GMT+0800">
+        <meta property="article:modified_time" content="Fri Nov 08 2019 10:41:41 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,13 +257,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://riteme.github.io/tags/Algorithm/index.html" />
+        <link rel="canonical" href="https://riteme.github.io/2019/11/08/BullsAndCows/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://riteme.github.io/2019/11/08/BullsAndCows/index.html",
+    "headline": "BullsAndCows",
+    "datePublished": "Fri Nov 08 2019 09:59:05 GMT+0800",
+    "dateModified": "Fri Nov 08 2019 10:41:41 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "TianQi Zhang",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "Welcome, wish you find something useful here."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "TianQi&#39;s Site",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",Algorithm,Leetcode",
+    "description": "Some notes about OJ and CS",
+}
+</script>
 
 
     
@@ -291,215 +327,386 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Problem"><span class="post-toc-number">1.</span> <span class="post-toc-text">Problem</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Solution-1-直接按照描述求解"><span class="post-toc-number">2.</span> <span class="post-toc-text">Solution-1 直接按照描述求解</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Solution-2-优化的方法"><span class="post-toc-number">3.</span> <span class="post-toc-text">Solution-2 优化的方法</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2019/11/08/BullsAndCows/">BullsAndCows</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Pr...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2019/11/08/BullsAndCows/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="TianQi Zhang's avatar">
-            </div>
-            <div>
-                <strong>TianQi Zhang</strong>
-                <span>11月 08, 2019</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2019/11/07/数据流的中位数/">数据流的中位数</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Pr...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2019/11/07/数据流的中位数/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="TianQi Zhang's avatar">
-            </div>
-            <div>
-                <strong>TianQi Zhang</strong>
-                <span>11月 07, 2019</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Algorithm/">Algorithm</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2019/11/07/nim-game/">Nim Game</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Pr...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2019/11/07/nim-game/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="TianQi Zhang's avatar">
-            </div>
-            <div>
-                <strong>TianQi Zhang</strong>
-                <span>11月 07, 2019</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Algorithm/">Algorithm</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                BullsAndCows
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>TianQi Zhang</strong>
+        <span>11月 08, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Algorithm/">Algorithm</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Leetcode/">Leetcode</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>你正在和你的朋友玩 猜数字（Bulls and Cows）游戏：你写下一个数字让你的朋友猜。每次他猜测后，你给他一个提示，告诉他有多少位数字和确切位置都猜对了（称为“Bulls”, 公牛），有多少位数字猜对了但是位置不对（称为“Cows”, 奶牛）。你的朋友将会根据提示继续猜，直到猜出秘密数字。</p>
+<p>请写出一个根据秘密数字和朋友的猜测数返回提示的函数，用 A 表示公牛，用 B 表示奶牛。</p>
+<p>请注意秘密数字和朋友的猜测数都可能含有重复数字。</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/bulls-and-cows" target="_blank" rel="noopener">https://leetcode-cn.com/problems/bulls-and-cows</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+<pre><code>Example 1
+输入: secret = &quot;1807&quot;, guess = &quot;7810&quot;
+
+输出: &quot;1A3B&quot;
+
+解释: 1 公牛和 3 奶牛。公牛是 8，奶牛是 0, 1 和 7。
+
+Example 2
+输入: secret = &quot;1123&quot;, guess = &quot;0111&quot;
+
+输出: &quot;1A1B&quot;
+
+解释: 朋友猜测数中的第一个 1 是公牛，第二个或第三个 1 可被视为奶牛。
+</code></pre><p><strong>说明:</strong> 你可以假设秘密数字和朋友的猜测数都只包含数字，并且它们的长度永远相等。</p>
+<h2 id="Solution-1-直接按照描述求解"><a href="#Solution-1-直接按照描述求解" class="headerlink" title="Solution-1 直接按照描述求解"></a>Solution-1 直接按照描述求解</h2><p>这种做法同样可以适用于两个string长度不同<code>len(guess) &gt; len(secret)</code>的情况 </p>
+<pre><code class="lang-c++">class Solution {
+public:
+    string getHint(string secret, string guess) {
+        int bulls{0}, cows{0};
+        map&lt;char, int&gt; chars;
+        for (char c : secret) {
+            if (chars.find(c) == chars.end()) chars[c] = 1;
+            else chars[c] += 1;
+        }
+
+        for (size_t i = 0; i &lt; secret.size(); ++i) {
+            if (guess[i] == secret[i] &amp;&amp; chars[guess[i]] &gt; 0) {
+                chars[guess[i]] -= 1;
+                bulls += 1;
+                guess[i] = &#39;e&#39;;
+            }
+        }
+
+        for (size_t i = 0; i &lt; guess.size(); ++i) {
+            if (chars.find(guess[i]) != chars.end() &amp;&amp; chars[guess[i]] &gt; 0) {
+                chars[guess[i]] -= 1;
+                cows += 1;
+            }
+        }
+
+        ostringstream strio;
+        strio &lt;&lt; bulls &lt;&lt; &quot;A&quot; &lt;&lt; cows &lt;&lt; &quot;B&quot;;
+
+        return strio.str();
+    }
+};
+</code></pre>
+<h2 id="Solution-2-优化的方法"><a href="#Solution-2-优化的方法" class="headerlink" title="Solution-2 优化的方法"></a>Solution-2 优化的方法</h2><p>这种方法只适用于两个字符串长度一样的情况:<code>len(secret) == len(guess) == len</code>，因为字符只有0-9十个，所以可以直接使用数组记录，<code>bulls</code>同样可以直接统计。而对于<code>cows</code>，<strong>我们只考虑没有归入<code>bulls</code>中的元素</strong>，在<code>bucks</code>中记录的元素是<code>num_elem_in_secret - num_elem_in_guess</code>, 我们应该有关系：<code>sum(bucks) == 0</code>，或者假设<code>bucks</code>是两个向量<code>x</code>和<code>y</code>之差，其中<code>x[i]=#i in secret</code>, <code>y[i]=#i in guess</code>. 那么应该有<code>sum(x)=sum(y)=len-bulls</code>，那么在这两个向量相减的过程中，相互抵消掉的部分就是同时存在于<code>secret</code>和<code>guess</code>的部分，多出来的正值的部分就是只存在于<code>secret</code>中的部分，多出来的负值的部分就是只存在于<code>guess</code>中的部分，那么我们只需要使用<code>len-bulls-sum([i for i in bucks if i &gt; 0])</code>就是同时存在于<code>guess</code>和<code>cows</code>中并且不在<code>bulls</code>中的元素个数，即<code>cows</code>.</p>
+<pre><code class="lang-c++">// Version 1
+class Solution {
+public:
+    string getHint(string secret, string guess) {
+        int bulls{0}, cows{0};
+        array&lt;int, 10&gt; bucks;
+        bucks.fill(0);
+
+        for (size_t i = 0; i &lt; secret.size(); ++i) {
+            if (guess[i] == secret[i]) {
+                ++bulls;
+                continue;
+            }
+            bucks[guess[i] - &#39;0&#39;] += 1;
+            bucks[secret[i] - &#39;0&#39;] -= 1;
+        }
+
+        for (int i : bucks) {
+            if (i &gt; 0) cows += i;
+        }
+
+        cows = (int)guess.size() - bulls - cows;
+        ostringstream strio;
+        strio &lt;&lt; bulls &lt;&lt; &quot;A&quot; &lt;&lt; cows &lt;&lt; &quot;B&quot;;
+        return strio.str();
+    }
+};
+
+// Version 2
+class Solution {
+public:
+    string getHint(string secret, string guess) {
+        int bulls{0}, cows{0};
+        array&lt;int, 10&gt; bucks;
+        bucks.fill(0);
+
+        for (size_t i = 0; i &lt; secret.size(); ++i) {
+            if (guess[i] == secret[i]) {
+                ++bulls;
+                continue;
+            }
+            bucks[guess[i] - &#39;0&#39;] += 1;
+            bucks[secret[i] - &#39;0&#39;] -= 1;
+        }
+
+        for (int i : bucks) {
+            if (i &lt; 0) cows += i;
+        }
+
+        cows = (int)guess.size() - bulls + cows;
+        ostringstream strio;
+        strio &lt;&lt; bulls &lt;&lt; &quot;A&quot; &lt;&lt; cows &lt;&lt; &quot;B&quot;;
+        return strio.str();
+    }
+};
+</code></pre>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #757575;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://riteme.github.io/2019/11/08/BullsAndCows/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://riteme.github.io/2019/11/08/BullsAndCows/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//lygztq.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//lygztq.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/11/07/数据流的中位数/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -670,6 +877,14 @@ It will not impact the appearance and can give developers a lot of support :)
                     
 
                     
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
@@ -821,6 +1036,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -833,6 +1052,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
