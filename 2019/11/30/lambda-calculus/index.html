@@ -48,7 +48,7 @@
     
     <title>
         
-            标签: OnlineJudge | 
+            Lambda-Calculus | 
         
         TianQi&#39;s Site
     </title>
@@ -59,7 +59,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="Some notes about OJ and CS">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Theoretical-CS">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -86,6 +86,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -222,7 +225,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="TianQi&#39;s Site">
-    <meta name="msapplication-starturl" content="https://riteme.github.io/tags/OnlineJudge/">
+    <meta name="msapplication-starturl" content="https://riteme.github.io/2019/11/30/lambda-calculus/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="TianQi&#39;s Site">
@@ -237,13 +240,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://riteme.github.io/tags/OnlineJudge/">
+    <meta property="og:url" content="https://riteme.github.io/2019/11/30/lambda-calculus/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: OnlineJudge | TianQi&#39;s Site">
+    <meta property="og:title" content="Lambda-Calculus | TianQi&#39;s Site">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="Some notes about OJ and CS">
-    
+    <meta property="og:article:tag" content="Theoretical-CS"> 
 
+    
+        <meta property="article:published_time" content="Sat Nov 30 2019 10:43:20 GMT+0800">
+        <meta property="article:modified_time" content="Sat Nov 30 2019 10:47:31 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,13 +257,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://riteme.github.io/tags/OnlineJudge/index.html" />
+        <link rel="canonical" href="https://riteme.github.io/2019/11/30/lambda-calculus/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://riteme.github.io/2019/11/30/lambda-calculus/index.html",
+    "headline": "Lambda-Calculus",
+    "datePublished": "Sat Nov 30 2019 10:43:20 GMT+0800",
+    "dateModified": "Sat Nov 30 2019 10:47:31 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "TianQi Zhang",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "Welcome, wish you find something useful here."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "TianQi&#39;s Site",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",Theoretical-CS",
+    "description": "Some notes about OJ and CS",
+}
+</script>
 
 
     
@@ -291,98 +327,395 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Some-Facts"><span class="post-toc-number">1.</span> <span class="post-toc-text">Some Facts</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Definition"><span class="post-toc-number">2.</span> <span class="post-toc-text">Definition</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Free-and-Bound-Variables"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Free and Bound Variables</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Substitutions"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Substitutions</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Arithmetic"><span class="post-toc-number">3.</span> <span class="post-toc-text">Arithmetic</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Addition"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Addition</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Multiplication"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">Multiplication</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/07/20/dancing-link/">Dancing Link</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            简介Dancing...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/07/20/dancing-link/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="TianQi Zhang's avatar">
-            </div>
-            <div>
-                <strong>TianQi Zhang</strong>
-                <span>7月 20, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Algorithm/">Algorithm</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Lambda-Calculus
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>TianQi Zhang</strong>
+        <span>11月 30, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Theoretical-CS/">Theoretical-CS</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="Some-Facts"><a href="#Some-Facts" class="headerlink" title="Some Facts"></a>Some Facts</h2><ol>
+<li>The $\lambda$ calculus consists of a single transformation rule (variable substitution) and a single function definition scheme.</li>
+<li>The $\lambda$ calculus is universal that any computable function can be expressed and evaluated using this formalism.</li>
+<li>The $\lambda$ calculus is equivalent to Turing Machine. But the $\lambda$ calculus cares more about the transformation rules and does not care about the actual machine implementation.</li>
+</ol>
+<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><p>Here we give some definition used in $\lambda$ calculus.</p>
+<p><strong>Name (Variable)</strong>: A name is an identifier which can be any of the letters $a,b,c,\dots$.</p>
+<p><strong>Expression</strong>: The central concept in $\lambda$ calculus. An expression is defined recursively as follows:</p>
+<blockquote>
+<p>[expression] := [name] | [function] | [application]</p>
+<p>[function] := $\lambda$ [name].[expression]</p>
+<p>[application] := [expression][expression]</p>
+</blockquote>
+<p>Note: The expression can be surrounded with parenthesis with same rule in basic math.</p>
+<p><strong>Function</strong>: Function is defined in this form:</p>
+<blockquote>
+<p>[function] := $\lambda$ [name].[expression]</p>
+</blockquote>
+<p>The name after the $\lambda$ is the identifier of the argument of this function. The expression after the point is called the body of the definition.</p>
+<p>Function can be applied to expressions. Here is an example:</p>
+<script type="math/tex; mode=display">
+(\lambda x.x)y = [y/x]x = y</script><p>$[y/x]$ is used to indicate that all occurrences of $x$ are substituted by $y$ in the expression to the right.</p>
+<p><em>Remark</em>: The names of the arguments in function definitions do not carry any meaning, they just “placeholders”. Therefore:</p>
+<script type="math/tex; mode=display">
+(\lambda z.z) \equiv (\lambda y.y) \equiv (\lambda t.t) \equiv (\lambda u.u) \equiv \cdots</script><h3 id="Free-and-Bound-Variables"><a href="#Free-and-Bound-Variables" class="headerlink" title="Free and Bound Variables"></a>Free and Bound Variables</h3><p>In $\lambda$ calculus all names are local to definitions.</p>
+<p><strong>Bound variables</strong>: In the function $\lambda x.x$ we say that $x$ is bound because its occurrence in the body of the definition is preceded by $\lambda x$.</p>
+<p><strong>Free variables</strong>: A name not preceded by a $\lambda$ is called a free variable.</p>
+<p>For example: </p>
+<p>In the expression</p>
+<script type="math/tex; mode=display">
+(\lambda x.xy)</script><p>the variable $x$ is bound and $y$ is free.</p>
+<p>In the expression</p>
+<script type="math/tex; mode=display">
+(\lambda x.x)(\lambda y.yx)</script><p>the $x$ in the body of the first expression is bound to the first $\lambda$. The $y$ in the body of the second expression is bound to the second $\lambda$ and $x$ is free. <strong>The $x$ in the second expression is independent of the $x$ in the first expression.</strong></p>
+<p><strong>Formally Definition of Free Variable</strong>: We say a variable [name] is free in an expression if one of the following three cases holds:</p>
+<ul>
+<li>[name] is free in [name]</li>
+<li>[name] is free in $\lambda$[name1].[expression] if [name] $\neq$ [name1] and [name] free in [expression].</li>
+<li>[name] is free in $E_1 E_2$ if [name] is free in $E_1$ or if it is free in $E_2$.</li>
+</ul>
+<p><strong>Formally Definition of Bound Variable</strong>: A variable [name] is bound if one of two cases holds:</p>
+<ul>
+<li>[name] is bound in $\lambda$[name1].[expression] if [name] = [name1] or [name] is bound in [expression]</li>
+<li>[name] is bound in $E_1 E_2$ if [name] is bound in $E_1$ or if it is bound in $E_2$.</li>
+</ul>
+<p><em>Note</em>: The same identifier can occur free and bound in the same expression. For example: In the expression</p>
+<script type="math/tex; mode=display">
+(\lambda x.xy)(\lambda y.y)</script><p><strong>The first $y$ is free in the left subexpression but bound in the right subexpression. It occurs therefore free as well as bound in the whole expression.</strong> (interesting…)</p>
+<h3 id="Substitutions"><a href="#Substitutions" class="headerlink" title="Substitutions"></a>Substitutions</h3><blockquote>
+<p>The more confusing part of standard $\lambda$ calculus is that we do not give names to functions, i.e. functions are anonymous. Any time we want to apply a function, we write the whole function definition and then precede to evaluate it.</p>
+</blockquote>
+<p>To simplify the notation, we will give function a name. For example, the identity function $(\lambda x.x)$ can be denoted with $I$. We have:</p>
+<script type="math/tex; mode=display">
+\begin{split}
+II &= (\lambda x.x)(\lambda x.x) = (\lambda x.x)(\lambda y.y) \\
+&= [\lambda y.y/x]x = \lambda y.y = I
+\end{split}</script><p><strong>Rename of mixed bound and free variable</strong></p>
+<p>Here is a problem: We should be very careful when performing substitutions to avoid mixing up free occurrences of an identifier with bound ones. For example, in the expression</p>
+<script type="math/tex; mode=display">
+(\lambda x.(\lambda y.xy))y</script><p>If we do substitution directly, we will get:</p>
+<script type="math/tex; mode=display">
+\lambda y.yy</script><p>Here we mix up these two independent variable $y$. Simple by renaming the bound $y$ to $t$ we obtain:</p>
+<script type="math/tex; mode=display">
+(\lambda x.(\lambda t.xt))t = \lambda t.yt</script><p>Therefore, if the function $\lambda x.[\text{expression}]$ is applied to $E$, we substitute all <strong>free</strong> occurrences of $x$ in [expression] with $E$. If the substitution would bring a free variable of $E$ in an expression where the variable with same name occurs bound, we rename the bound one before performing the substitution.</p>
+<blockquote>
+<p><em>example</em></p>
+<p>Note that two $x$ bounded by different $\lambda x$ is different. In substitution we only do substitution for the outer $x$.</p>
+<script type="math/tex; mode=display">
+\begin{split}
+(\lambda x.(\lambda y.(x(\lambda x.xy))))y &=_{\text{rename bound y}} (\lambda x.(\lambda t.(x(\lambda x.xt))))y \\
+&= [y/x](\lambda t.(x(\lambda x.xt))) \\
+&=_{\text{note two different x}} (\lambda t.(t(\lambda x.xt)))
+\end{split}</script></blockquote>
+<h2 id="Arithmetic"><a href="#Arithmetic" class="headerlink" title="Arithmetic"></a>Arithmetic</h2><p>Numbers can be defined in lambda calculus starting from zero. We define zero as</p>
+<script type="math/tex; mode=display">
+\lambda s.(\lambda z.z)</script><p>Or we can abbreviate such expressions with more than one argument as:</p>
+<script type="math/tex; mode=display">
+s(z) = \lambda sz.z</script><p>Then all natural numbers can be defined as</p>
+<script type="math/tex; mode=display">
+\begin{split}
+1 &= \lambda sz.s(z) \\
+2 &= \lambda sz.s(s(z)) \\
+3 &= \lambda sz.s(s(s(z))) \\
+&\dots
+\end{split}</script><p>Then the successor function can be defined as</p>
+<script type="math/tex; mode=display">
+S = \lambda wyx.y(wyx)</script><p>The successor function applied to our representation for zero yields</p>
+<script type="math/tex; mode=display">
+\begin{split}
+S0 &= (\lambda wyx.y(wyx))(\lambda sz.z) \\
+&= (\lambda yx.y((\lambda sz.z)yx)) \\
+&= \lambda yx.y((\lambda z.z)x) \\
+&= \lambda yx.y(x) = 1
+\end{split}</script><p>Similarly we have</p>
+<script type="math/tex; mode=display">
+\begin{split}
+S1 &= (\lambda wyx.y(wyx))(\lambda sz.s(z)) \\
+&= (\lambda yx.y((\lambda sz.s(z))yx)) \\
+&= \lambda yx.y((\lambda z.y(z))x) \\
+&= \lambda yx.y(y(x)) = 2
+\end{split}</script><h3 id="Addition"><a href="#Addition" class="headerlink" title="Addition"></a>Addition</h3><p>If we want to add say $n$ and $m$, we just apply the successor function $n$ times to $m$</p>
+<p>Let us try the following in order to compute $2+3$:</p>
+<script type="math/tex; mode=display">
+\begin{split}
+2S3 &= (\lambda sz.s(sz))(\lambda wyx.y(wyx))(\lambda uv.u(u(uv))) \\
+&= (\lambda sz.s(sz))S3 \\
+&= (\lambda z.S(Sz))3 \\
+&= S(S3) \\
+&= 5
+\end{split}</script><blockquote>
+<p><em>Note.</em> 对于丘奇数 $n$，本身的含义是传入一个函数 $s$ 和一个变量 $z$，将 $z$ 递归地作用在此 $z$ 上 $n$ 次，这一点在上面的 $2S3$ 上有非常直观的体现，即对于丘奇数2，令$s = S$ 和 $z = 3$， 有</p>
+<script type="math/tex; mode=display">
+2S3 = \lambda sz.s(s(z))S3 = S(S(3)) = 5</script></blockquote>
+<h3 id="Multiplication"><a href="#Multiplication" class="headerlink" title="Multiplication"></a>Multiplication</h3><p>The multiplication of two numbers $x$ and $y$ can be computed using the following function:</p>
+<script type="math/tex; mode=display">
+\lambda xyz.x(yz)</script><p>The product of 2 by 2 is then:</p>
+<script type="math/tex; mode=display">
+(\lambda xyz.x(yz))22 = (\lambda z.2(2z)) = 4</script>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #757575;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://riteme.github.io/2019/11/30/lambda-calculus/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://riteme.github.io/2019/11/30/lambda-calculus/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//lygztq.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//lygztq.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/11/10/introduction-to-calculus-of-variations/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -553,6 +886,14 @@ It will not impact the appearance and can give developers a lot of support :)
                     
 
                     
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
@@ -704,6 +1045,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -716,6 +1061,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
