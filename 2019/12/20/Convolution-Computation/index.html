@@ -48,7 +48,7 @@
     
     <title>
         
-            Nim Game | 
+            Convolution Computation | 
         
         TianQi&#39;s Site
     </title>
@@ -59,7 +59,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="Some notes about OJ and CS">
-    <meta name="keywords" content=",Algorithm,Leetcode">
+    <meta name="keywords" content=",DL Framework">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -225,7 +225,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="TianQi&#39;s Site">
-    <meta name="msapplication-starturl" content="https://riteme.github.io/2019/11/07/nim-game/">
+    <meta name="msapplication-starturl" content="https://riteme.github.io/2019/12/20/Convolution-Computation/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="TianQi&#39;s Site">
@@ -240,16 +240,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://riteme.github.io/2019/11/07/nim-game/">
+    <meta property="og:url" content="https://riteme.github.io/2019/12/20/Convolution-Computation/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Nim Game | TianQi&#39;s Site">
+    <meta property="og:title" content="Convolution Computation | TianQi&#39;s Site">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="Some notes about OJ and CS">
-    <meta property="og:article:tag" content="Algorithm"> <meta property="og:article:tag" content="Leetcode"> 
+    <meta property="og:article:tag" content="DL Framework"> 
 
     
-        <meta property="article:published_time" content="Thu Nov 07 2019 18:28:38 GMT+0800">
-        <meta property="article:modified_time" content="Thu Nov 07 2019 18:38:59 GMT+0800">
+        <meta property="article:published_time" content="Fri Dec 20 2019 17:10:03 GMT+0800">
+        <meta property="article:modified_time" content="Fri Dec 20 2019 19:02:24 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -257,7 +257,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://riteme.github.io/2019/11/07/nim-game/index.html" />
+        <link rel="canonical" href="https://riteme.github.io/2019/12/20/Convolution-Computation/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -269,10 +269,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://riteme.github.io/2019/11/07/nim-game/index.html",
-    "headline": "Nim Game",
-    "datePublished": "Thu Nov 07 2019 18:28:38 GMT+0800",
-    "dateModified": "Thu Nov 07 2019 18:38:59 GMT+0800",
+    "mainEntityOfPage": "https://riteme.github.io/2019/12/20/Convolution-Computation/index.html",
+    "headline": "Convolution Computation",
+    "datePublished": "Fri Dec 20 2019 17:10:03 GMT+0800",
+    "dateModified": "Fri Dec 20 2019 19:02:24 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "TianQi Zhang",
@@ -290,7 +290,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",Algorithm,Leetcode",
+    "keywords": ",DL Framework",
     "description": "Some notes about OJ and CS",
 }
 </script>
@@ -356,7 +356,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Problem"><span class="post-toc-number">1.</span> <span class="post-toc-text">Problem</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Solution"><span class="post-toc-number">2.</span> <span class="post-toc-text">Solution</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#算法层面上"><span class="post-toc-number">1.</span> <span class="post-toc-text">算法层面上</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#实现层面上"><span class="post-toc-number">2.</span> <span class="post-toc-text">实现层面上</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Im2col"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Im2col</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -388,7 +388,7 @@
         
     
             <p class="article-headline-p">
-                Nim Game
+                Convolution Computation
             </p>
         </div>
 
@@ -407,7 +407,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>TianQi Zhang</strong>
-        <span>11月 07, 2019</span>
+        <span>12月 20, 2019</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -431,7 +431,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/Algorithm/">Algorithm</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Leetcode/">Leetcode</a>
+        <a class="post_tag-link" href="/tags/DL-Framework/">DL Framework</a>
     </ul>
     
 
@@ -476,21 +476,23 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<p>你和你的朋友，两个人一起玩 Nim 游戏：桌子上有一堆石头，每次你们轮流拿掉 1 - 3 块石头。 拿掉最后一块石头的人就是获胜者。你作为先手。</p>
-<p>你们是聪明人，每一步都是最优解。 编写一个函数，来判断你是否可以在给定石头数量的情况下赢得游戏。</p>
-</blockquote>
-<p><em>e.g.</em></p>
-<pre><code>输入: 4
-输出: false 
-解释: 如果堆中有 4 块石头，那么你永远不会赢得比赛；
-     因为无论你拿走 1 块、2 块 还是 3 块石头，最后一块石头总是会被你的朋友拿走。
-</code></pre><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>考虑轮到玩家的时候，如果桌子上只剩下1-3个石头，那么必然会赢，如果剩下4个石头，那么怎么拿都会输。接下来考虑剩下多于4个石头的时候，如果能够采取操作让对手面临轮到他的时候只剩下4个 石头，则可以赢，那么易知在剩下5-7个石头的时候满足上述情况，可以赢。接下来考虑剩下8个石头的时候，此时无论采取什么操作，到对手轮次的时候必然只会剩下5-7个石头，这个时候对手必然能赢，按照这个规律可以一直推下去，得到当桌子上剩下<code>4k+1</code>, <code>4k+2</code>, <code>4k+3</code>个石头的时候当前玩家必然能赢，剩下<code>4k</code>的时候必然会输，得到一行代码</p>
-<pre><code class="lang-c++">bool canWin(int n) {
-    return (n % 4) != 0;
-}
-</code></pre>
-
+        <h2 id="算法层面上"><a href="#算法层面上" class="headerlink" title="算法层面上"></a>算法层面上</h2><p>我们假设输入数据的 shape 为 $(N \times C \times H \times W)$, Filter 的 shape 为 $(M \times C \times R \times S)$. 同时设 padding 的大小为 $P$, stride 为 $d$.  </p>
+<p>现在我们只考虑一个 channel 上的卷积核和输入进行计算，即 $(H\times W)$ 和 $(R\times S)$，同时只考虑在 $H, R$ 这个空间维度上的计算，另一个空间维度与之类似。显然第 0 次计算的区间为 $[0, R-1]$. stride 为 $S$, 则第 $k$ 次计算的区间为 $[kd, R-1 + kd]$. 假设 $k$ 就是最后一次计算，显然应该有</p>
+<script type="math/tex; mode=display">
+\begin{split}
+R - 1 + kd &\leq H + 2P \\
+R - 1 + (k+1)d &> H + 2P
+\end{split}</script><p>为了简单起见我们将 padding 直接算进空间尺度中去，即 $H \leftarrow H + 2P $. 那么得到</p>
+<script type="math/tex; mode=display">
+k \in \left( \frac{H - R + 1}{d} - 1, \frac{H - R + 1}{d} \right]</script><p>因为我们的计算是从第 0 次到第 $k$ 次，所以总计算次数是 $k+1$. 得到</p>
+<script type="math/tex; mode=display">
+k+1 \in \left( \frac{H - R + 1}{d}, \frac{H - R + 1}{d} + 1 \right]</script><p>这个不等式对于整数而言就是向下取整，代码中直接可以写成 $H_{new} = \frac{H + 2P - R + 1}{d} + 1$</p>
+<p>得到</p>
+<script type="math/tex; mode=display">
+\begin{split}
+H_{new} &= \frac{H + 2P - R + 1}{d} + 1 \\
+W_{new} &= \frac{W + 2P - S + 1}{d} + 1
+\end{split}</script><h2 id="实现层面上"><a href="#实现层面上" class="headerlink" title="实现层面上"></a>实现层面上</h2><h3 id="Im2col"><a href="#Im2col" class="headerlink" title="Im2col"></a>Im2col</h3>
         
     
 
@@ -544,8 +546,8 @@
 
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'https://riteme.github.io/2019/11/07/nim-game/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'https://riteme.github.io/2019/11/07/nim-game/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'https://riteme.github.io/2019/12/20/Convolution-Computation/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://riteme.github.io/2019/12/20/Convolution-Computation/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
@@ -594,21 +596,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/11/07/数据流的中位数/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/10/30/C-的头文件与源代码/" id="post_nav-older" class="next-content">
+        <a href="/2019/12/13/树的中心和半径/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
